@@ -1,0 +1,28 @@
+opti prop conp 
+title
+NaI Test File 
+end
+# define the simulation cell
+cell
+6.532 6.532 6.532  90.0 90.0 90.0
+# define the atoms
+frac
+Na core  0.000000 0.000000 0.000000
+Na core  0.000000 0.500000 0.500000
+Na core  0.500000 0.000000 0.500000
+Na core  0.500000 0.500000 0.000000
+I core  0.000000 0.000000 0.500000
+I core  0.000000 0.500000 0.000000
+I core  0.500000 0.000000 0.000000
+I core  0.500000 0.500000 0.500000
+#space
+#225
+# define the charges
+species
+Na core   0.988
+I core  -0.988
+# define the potential
+buckingham
+Na core Na core 7895.4 0.1709 0.0  0.0 12.0
+Na core I core  3705.5 0.3099 27.38 0.0 12
+I core I core   5502.5 0.3066 11.68 0.0 12.0

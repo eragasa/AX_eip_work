@@ -1,0 +1,28 @@
+opti prop conp 
+title
+RbF Test File 
+end
+# define the simulation cell
+cell
+5.739 5.739 5.739 90.0 90.0 90.0
+# define the atoms
+frac
+Rb core  0.000000 0.000000 0.000000
+Rb core  0.000000 0.500000 0.500000
+Rb core  0.500000 0.000000 0.500000
+Rb core  0.500000 0.500000 0.000000
+F core  0.000000 0.000000 0.500000
+F core  0.000000 0.500000 0.000000
+F core  0.500000 0.000000 0.000000
+F core  0.500000 0.500000 0.500000
+#space
+#225
+# define the charges
+species
+Rb core   0.96
+F core  -0.96
+# define the potential
+buckingham
+Rb core Rb core 6808.1 0.2704 0.0  0.0 12.0
+Rb core F core  2209.3 0.2945 69.83 0.0 12
+F core F core   1127.7 0.2753 0.0  0.0 12.0

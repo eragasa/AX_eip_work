@@ -1,0 +1,24 @@
+Iopti prop conp 
+title
+NaCl Test File 
+end
+# define the simulation cell
+cell
+3.5044 3.5044 3.5044 90.0 90.0 90.0
+# define the atoms
+frac
+Na core  0.000000 0.000000 0.000000
+Na core  0.000000 0.500000 0.500000
+Cl core  0.500000 0.000000 0.000000
+Cl core  0.500000 0.500000 0.500000
+#space
+#225
+# define the charges
+species
+Na core   0.988
+Cl core  -0.988
+# define the potential
+buckingham
+Na core Na core 7895.4 0.1709 0.0  0.0 12.0
+Na core Cl core 2314.7 0.2903 0.00 0.0 12
+Cl core Cl core 1227.2 0.3212 29.06 0.0 12.0

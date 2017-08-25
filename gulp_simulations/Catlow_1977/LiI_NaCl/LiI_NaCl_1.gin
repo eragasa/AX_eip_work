@@ -1,0 +1,28 @@
+Iopti prop conp 
+title
+LiI Test File 
+end
+# define the simulation cell
+cell
+6.026 6.026 6.026 90.0 90.0 90.0
+# define the atoms
+frac
+Li core  0.000000 0.000000 0.000000
+Li core  0.000000 0.500000 0.500000
+Li core  0.500000 0.000000 0.500000
+Li core  0.500000 0.500000 0.000000
+I core  0.000000 0.000000 0.500000
+I core  0.000000 0.500000 0.000000
+I core  0.500000 0.000000 0.000000
+I core  0.500000 0.500000 0.500000
+#space
+#225
+# define the charges
+species
+Li core   0.979
+I core  -0.979
+# define the potential
+buckingham
+Li core Li core  1153.8 0.1364 0.0   0.0 12.0
+Li core I core   8894.7 0.2617 0.00 0.0 12
+I core I core    5502.5 0.3066 0.00  0.0 12.0

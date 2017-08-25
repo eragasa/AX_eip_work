@@ -1,0 +1,28 @@
+opti prop conp 
+title
+RbCl Test File 
+end
+# define the simulation cell
+cell
+6.699 6.699 6.699 90.0 90.0 90.0
+# define the atoms
+frac
+Rb core  0.000000 0.000000 0.000000
+Rb core  0.000000 0.500000 0.500000
+Rb core  0.500000 0.000000 0.500000
+Rb core  0.500000 0.500000 0.000000
+Cl core  0.000000 0.000000 0.500000
+Cl core  0.000000 0.500000 0.000000
+Cl core  0.500000 0.000000 0.000000
+Cl core  0.500000 0.500000 0.500000
+#space
+#225
+# define the charges
+species
+Rb core   0.991
+Cl core  -0.991
+# define the potential
+buckingham
+Rb core Rb core 6808.1 0.2704 0.0  0.0 12.0
+Rb core Cl core 3559.9 0.3233 201.2 0.0 12
+Cl core Cl core 1227.2 0.3214 0.0  0.0 12.0

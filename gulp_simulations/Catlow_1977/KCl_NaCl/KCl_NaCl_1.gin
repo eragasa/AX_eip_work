@@ -1,0 +1,32 @@
+Iopti prop conp 
+title
+
+KCl Test File 
+end
+# define the simulation cell
+cell
+6.395 6.395 6.395 6.395 90.0 90.0 90.0
+# define the atoms
+frac
+K core  0.000000 0.000000 0.000000
+K core  0.000000 0.500000 0.500000
+K core  0.500000 0.000000 0.500000
+K core  0.500000 0.500000 0.000000
+Cl core  0.000000 0.000000 0.500000
+Cl core  0.000000 0.500000 0.000000
+Cl core  0.500000 0.000000 0.000000
+Cl core  0.500000 0.500000 0.500000
+#space
+#225
+# define the charges
+species
+K core   0.981
+Cl core  -0.981
+# define the potential
+buckingham
+# K-K interactions, A, rho, C, r_cut_low, r_cut_high
+K core K core 3796.9 0.2603 0.0 0.00 12
+# K-Cl interactions, A, rho, C
+K core Cl core   4117.9 0.3048 124.9 0.0 12
+# Cl-Cl interactions, A, rho, C
+Cl core Cl core   1227.2 0.3214 0.00  0.0 12.0

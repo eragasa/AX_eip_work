@@ -1,0 +1,19 @@
+opti prop conp 
+title
+Mg_O test file
+end
+cell
+4.256483  4.256483  4.256483  90.000000  90.000000  90.000000
+frac
+Mg core 0.000000   0.000000   0.000000 
+O  core 0.500000   0.500000   0.500000 
+space
+225
+species
+Mg core   2.000
+O  core  -2.000
+buckingham
+Mg core O core  821.6 0.3242  0.0
+O  core O core    22764.0 0.1490 27.88
+output xr example1
+output marvin example1.mvn

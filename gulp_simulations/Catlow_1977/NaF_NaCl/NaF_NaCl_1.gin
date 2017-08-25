@@ -1,0 +1,28 @@
+opti prop conp 
+title
+NaF Test File 
+end
+# define the simulation cell
+cell
+4.696 4.696 4.696 90.0 90.0 90.0
+# define the atoms
+frac
+Na core  0.000000 0.000000 0.000000
+Na core  0.000000 0.500000 0.500000
+Na core  0.500000 0.000000 0.500000
+Na core  0.500000 0.500000 0.000000
+F core  0.000000 0.000000 0.500000
+F core  0.000000 0.500000 0.000000
+F core  0.500000 0.000000 0.000000
+F core  0.500000 0.500000 0.500000
+#space
+#225
+# define the charges
+species
+Na core   0.981
+F core  -0.981
+# define the potential
+buckingham
+Na core Na core 7895.4 0.1709 0.0  0.0 12.0
+Na core F core  1127.7 0.2753 0.00 0.0 12
+F core F core   1594.2 0.2555 11.68 0.0 12.0

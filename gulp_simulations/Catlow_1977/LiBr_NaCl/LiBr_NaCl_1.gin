@@ -1,0 +1,28 @@
+Iopti prop conp 
+title
+LiBr Test File 
+end
+# define the simulation cell
+cell
+5.513 5.513 5.513 90.0 90.0 90.0
+# define the atoms
+frac
+Li core  0.000000 0.000000 0.000000
+Li core  0.000000 0.500000 0.500000
+Li core  0.500000 0.000000 0.500000
+Li core  0.500000 0.500000 0.000000
+Br core  0.000000 0.000000 0.500000
+Br core  0.000000 0.500000 0.000000
+Br core  0.500000 0.000000 0.000000
+Br core  0.500000 0.500000 0.500000
+#space
+#225
+# define the charges
+species
+Li core   0.992
+Br core  -0.992
+# define the potential
+buckingham
+Li core Li core  1153.8 0.1364 0.0  0.0 12.0
+Li core Br core  1162.8 0.2882 0.01  0.0 12.0
+Br core Br core  2948.2 0.3214 0.0 0.0 12.0

@@ -1,0 +1,32 @@
+opti prop conp 
+title
+
+KF Test File 
+end
+# define the simulation cell
+cell
+5.424 5.424 5.424 90.0 90.0 90.0
+# define the atoms
+frac
+K core  0.000000 0.000000 0.000000
+K core  0.000000 0.500000 0.500000
+K core  0.500000 0.000000 0.500000
+K core  0.500000 0.500000 0.000000
+F core  0.000000 0.000000 0.500000
+F core  0.000000 0.500000 0.000000
+F core  0.500000 0.000000 0.000000
+F core  0.500000 0.500000 0.500000
+#space
+#225
+# define the charges
+species
+K core   0.969
+F core  -0.969
+# define the potential
+buckingham
+# K-K interactions, A, rho, C, r_cut_low, r_cut_high
+K core K core  3796.9 0.2603 0.0 0.00 12
+# K-F interactions, A, rho, C
+K core F core  2426.8 0.277 44.6 0.0 12
+# Cl-Cl interactions, A, rho, C
+F core F core  1127.7 0.2753  0.0 12.0

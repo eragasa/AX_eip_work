@@ -1,0 +1,28 @@
+opti prop conp 
+title
+RbBr Test File 
+end
+# define the simulation cell
+cell
+7.028 7.028 7.028  90.0 90.0 90.0
+# define the atoms
+frac
+Rb core  0.000000 0.000000 0.000000
+Rb core  0.000000 0.500000 0.500000
+Rb core  0.500000 0.000000 0.500000
+Rb core  0.500000 0.500000 0.000000
+Br core  0.000000 0.000000 0.500000
+Br core  0.000000 0.500000 0.000000
+Br core  0.500000 0.000000 0.000000
+Br core  0.500000 0.500000 0.500000
+#space
+#225
+# define the charges
+species
+Rb core   0.988
+Br core  -0.988
+# define the potential
+buckingham
+Rb core Rb core 6808.1 0.2704 0.0  0.0 12.0
+Rb core Br core 4169.9 0.3321 261.4 0.0 12
+Br core Br core 2948.2 0.3164 0.0  0.0 12.0
